@@ -1,11 +1,24 @@
+body{
+    color: #2D2D2D;
+}
 nav{
 display: flex;
 justify-content: space-between;
+align-items: center;
+background-color: #38FF06;
+}
 
+a{
+    font-family: Arial, sans-serif;
+    color: #2D2D2D;
 }
 
 nav#navigation{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+button{
+    
 }
