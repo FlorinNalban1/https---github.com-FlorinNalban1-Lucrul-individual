@@ -1,0 +1,9 @@
+nav{
+display: flex;
+justify-content: space-between;
+color: #000;
+}
+
+nav#navigation{
+    align-items: center;
+}
