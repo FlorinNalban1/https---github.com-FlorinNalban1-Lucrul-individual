@@ -1,15 +1,24 @@
 body{    
     margin: 0;
     font-family: Arial, sans-serif;
-   
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "header header header"
+        "aside-left content aside-right"
+        "footer footer footer";
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 40px 200px auto 200px;
+    gap: 5px;
 }
 
-ul {
+nav{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #10be6d;
+    grid-area: nav; 
 }
 
 li{
@@ -41,19 +50,31 @@ div#fon{
     
 }
 
-header{
-    background-color: aquamarine;
+header {
+    background-color: #0a2c21;
+    text-align: center;
+    margin: 10;
+    color: #ffff;
+    font-size: 100px;
     grid-area: header;
 }
-.slider {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    overflow-x: auto;
-  }
-  .slide {
-    width: 300px;
-    flex-shrink: 0;
-    height: 100%;
-  }
 
+aside.aside-left {
+    background-color: #000000;
+    grid-area: aside-left;
+}
+
+aside.aside-right {
+    background-color: yellowgreen;
+    grid-area: aside-right;
+}
+
+main {
+    background-color: blanchedalmond;
+    grid-area: content;
+}
+
+footer {
+    background-color: blueviolet;
+    grid-area: footer;
+}
