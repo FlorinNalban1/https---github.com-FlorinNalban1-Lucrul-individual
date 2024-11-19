@@ -1,6 +1,7 @@
 body{    
     margin: 0;
     font-family: Arial, sans-serif;
+   
 }
 
 ul {
@@ -27,7 +28,7 @@ li.home{
     background-color: #047e33;
 }
   
-li a:hover {
+li a:hover{
     background-color: #03815b;
 }
 
@@ -35,3 +36,24 @@ li.login{
     background-color: #13853f;
     float: right;
 }
+
+div#fon{
+    
+}
+
+header{
+    background-color: aquamarine;
+    grid-area: header;
+}
+.slider {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    overflow-x: auto;
+  }
+  .slide {
+    width: 300px;
+    flex-shrink: 0;
+    height: 100%;
+  }
+
