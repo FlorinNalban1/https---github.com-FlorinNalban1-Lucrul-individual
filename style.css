@@ -1,9 +1,11 @@
 nav{
 display: flex;
 justify-content: space-between;
-color: #000;
+
 }
 
 nav#navigation{
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
